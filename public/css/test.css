@@ -300,8 +300,6 @@ body {
     }
   }
 
-
-
   .fixed-top {
     background-color: rgb(255, 255, 255) !important;
     transition: background-color 300ms linear;
