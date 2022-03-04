@@ -89,7 +89,7 @@
     <p class="h1 text-center mb-5" style="color: #da1b11; user-select: none;">Пройдите тур по колледжу<br>не выходя из дома!</p>
     <div class="line m-auto"></div>
     <div class="container">
-        <iframe src="https://pano3d.kz/PolyTech/" height="600px" width="100%" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+        <iframe src="https://pano3d.kz/PolyTech/" height="600px" width="100%" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="border-radius: 15px;"></iframe>
     </div>
     <div class="container">
         <div class="row align-items-center justify-content-around py-3">
@@ -173,13 +173,5 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
   });
-  </script>
-{{-- Styled-scroll-fixed-top --}}
-  <script>
-      $(function () {
-  $(document).scroll(function () {
-    var $nav = $(".fixed-top");
-  });
-});
   </script>
 </html>
