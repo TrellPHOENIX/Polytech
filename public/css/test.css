@@ -299,3 +299,11 @@ body {
       margin: 0 auto;
     }
   }
+
+
+
+  .fixed-top {
+    background-color: rgb(255, 255, 255) !important;
+    transition: background-color 300ms linear;
+    border-radius: 0 0 30px 30px;
+  }
