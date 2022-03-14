@@ -5,35 +5,40 @@ body {
     font-family: "Exo 2", sans-serif;
 }
 
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1 /*Цвет скролла*/
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 3px; /*Закругление ползунка*/
+	background-color: #e00900; /*Цвет ползунка*/
+    box-shadow: 0 2px 4px 0 rgb(136 144 195 / 20%), 0 5px 15px 0 rgb(37 44 97 / 15%);
+}
+::-webkit-scrollbar{
+	width: 15px;  /*Толщина скролла*/
+}
+
 body {
     background-color: #fff;
 }
 
-.h1 {
-    color: #da1b11;
+.h1, .h2, .h3, .h4, .h5, .h6, .lead,
+h1, h2, h3, h4, h5, h6, p {
+    color: #e00900;
     user-select: none;
 }
 
-h1, h2, h3, h4 {
-    user-select: none;
-}
-
-p {
-    user-select: none;
+.lead {
+    font-size: 14pt;
+    font-weight: 500;
 }
 
 img {
     pointer-events: none;
 }
 
-.box-shad {
+.box-rad-15-shad {
     border-radius: 15px;
     box-shadow: 0 2px 4px 0 rgb(136 144 195 / 20%), 0 5px 15px 0 rgb(37 44 97 / 15%);
-}
-
-.lead {
-    color: #666666;
-    user-select: none;
 }
 
 .btn {
@@ -43,13 +48,14 @@ img {
 
 /* Header */
 
-.header_round {
+.item-round {
     width: 45px;
+    height: 45px;
     border-radius: 50%;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 .5rem;
     border: 2px solid #edf0f6;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 12pt;
     font-weight: 600;
     line-height: 40px;
     text-align: center;
@@ -59,39 +65,50 @@ img {
     transition: all 300ms ease 0ms;
 }
 
-.header_round:hover {
-    border: 2px solid red;
-    background-color: red;
+.item-round:hover {
+    border: 2px solid #e00900;
+    background-color: #e00900;
 }
 
-.header_round_txt li > a {
+.item-round-txt li > a {
     margin: 0 auto;
     padding: 0;
-    color: red;
+    color: #e00900;
+    font-weight: 700;
 
     -webkit-transition: all 300ms ease 0ms;
     -o-transition: all 300ms ease 0ms;
     transition: all 300ms ease 0ms;
 }
 
-.header_round_txt li > a:hover {
+.item-round-txt li > a:visited {
+    color: #e00900;
+}
+
+.item-round-txt li > a:hover {
     padding: 0;
     color: white;
 }
 
-/* Socia */
-
 .bi-eye-fill {
-    font-size: 18px;
+    font-size: 16pt;
 }
 
+/* Social */
+
 .social {
-    font-size: 25px;
-    color: red;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.bi-moodle {
+    padding: 0 !important;
+    margin-bottom: .1rem;
 }
 
 .social > li {
-    font-size: 25px;
+    color: #e00900;
+    font-size: 22pt;
+    padding: 0 .5rem 0 .5rem;
 
     -webkit-transition: all 300ms ease 0ms;
     -o-transition: all 300ms ease 0ms;
@@ -99,7 +116,7 @@ img {
 }
 
 .social > li:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .social > li > a {
@@ -107,21 +124,51 @@ img {
     text-decoration: none;
 }
 
-.line-h16 {
+.line-map {
     line-height: 16px;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.line-map > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #e00900;
+    font-size: 12pt;
+
+    -webkit-transition: all 300ms ease 0ms;
+    -o-transition: all 300ms ease 0ms;
+    transition: all 300ms ease 0ms;
+}
+
+.line-map > a:hover {
+    color: #9c0a05;
+}
+
+.line-phone {
+    padding: 0 .5rem 0 .5rem;
+}
+
+.line-phone > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #e00900;
+    font-size: 12pt;
+
+    -webkit-transition: all 300ms ease 0ms;
+    -o-transition: all 300ms ease 0ms;
+    transition: all 300ms ease 0ms;
+}
+
+.line-phone > a:hover {
+    color: #9c0a05;
 }
 
 /* Header Two */
 
 .navbar-nav > .nav-item {
-    margin: 0 30px 0 20px;
-    font-size: medium;
+    margin: 0 3.3rem 0 0;
+    font-size: 14pt;
     font-weight: 600;
-}
-
-.container-fluid {
-    padding-left: 0px !important;
-    padding-right: 30px !important;
 }
 
 .dropdown-menu {
@@ -130,6 +177,10 @@ img {
 
 .dropdown-menu > li {
     margin: 0 5px 0 5px;
+}
+
+.dropdown-menu > li > a {
+    font-size: 12pt;
 }
 
 .dropdown-item {
@@ -157,23 +208,17 @@ img {
 }
 
 .navbar-nav > li a {
-    color: red !important;
+    color: #e00900 !important;
 }
 
 .navbar-nav > li a:hover {
-    color: rgb(177, 7, 7) !important;
+    color: #9c0a05 !important;
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
-    color: blue !important;
+    color: #9c0a05 !important;
 }
 
-.line {
-    background: #ad0d06;
-    height: 2px;
-    margin-bottom: 10px!important;
-    width: 200px;
-}
 
 /* CARDS */
 
@@ -188,13 +233,13 @@ img {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    min-height: 260px;
+    min-height: 230px;
     transition: 0.7s;
     user-select: none;
   }
 
   .solution_cards_box .solution_card:hover {
-    background: #ad0d06;
+    background: #b80a03;
     color: #fff;
     transform: scale(1.1);
     z-index: 9;
@@ -205,7 +250,8 @@ img {
   }
 
   .solu_description p {
-      color: #ad0d06;
+      color: #b80a03;
+      font-weight: 500;
   }
 
   .solution_cards_box .solution_card:hover .solu_title h3,
@@ -235,14 +281,14 @@ img {
   }
 
   .solution_card .solu_title h3 {
-    color: #ad0d06;
-    font-size: 1.3rem;
+    color: #b80a03;
+    font-size: 18pt;
     margin-top: 13px;
     margin-bottom: 13px;
   }
 
   .solution_card .solu_description p {
-    font-size: 15px;
+    font-size: 12pt;
     margin-bottom: 15px;
   }
 
@@ -306,7 +352,7 @@ img {
   }
 
   .fixed-top {
-    background-color: rgb(193 24 24);
+    background-color: #ad0d06;
     transition: background-color 200ms linear;
     border-radius: 0 0 25px 25px;
     box-shadow: 0 2px 4px 0 rgb(136 144 195 / 20%), 0 5px 15px 0 rgb(37 44 97 / 15%);
@@ -327,7 +373,7 @@ img {
 
 .card:hover {
     transform: scale(1.1);
-    background-color: #e9ecef;
+    background-color: #ffe5e5;
 }
 
 .card-img-specialty {
@@ -345,14 +391,15 @@ img {
 
 .header-h1 {
     position: relative;
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
   }
   .header-h1 h1 {
     display: inline-block;
     background: #fff;
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 24pt;
+    font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -380,4 +427,14 @@ img {
   }
   .header-h1-right h1 {
     padding-right: 0;
+  }
+
+  .card-title {
+      font-size: 20pt;
+      font-weight: 600;
+  }
+
+  .card-text {
+      font-size: 12pt;
+      font-weight: 500;
   }
