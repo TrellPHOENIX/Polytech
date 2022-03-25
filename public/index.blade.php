@@ -216,16 +216,16 @@
     <section class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-4">
-                <div class="solution_cards_box">
-                    <div class="solution_card">
-                        <div class="hover_color_bubble"></div>
-                        <div class="so_top_icon">
+                <div class="order-cards-box">
+                    <div class="order-card">
+                        <div class="hover-color-bubble"></div>
+                        <div class="so-top-icon">
                             <img src="https://img.icons8.com/wired/2x/fa314a/good-quality.png" alt="" width="100">
                         </div>
-                        <div class="solu_title">
+                        <div class="solu-title">
                             <h3>Топ-10</h3>
                         </div>
-                        <div class="solu_description">
+                        <div class="solu-description">
                             <p>
                                 Начни свой путь высококвалифицированного специалиста с одного из "ТОП-10" колледжей
                                 Алматы
@@ -235,16 +235,16 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="solution_cards_box">
-                    <div class="solution_card">
-                        <div class="hover_color_bubble"></div>
-                        <div class="so_top_icon">
+                <div class="order-cards-box">
+                    <div class="order-card">
+                        <div class="hover-color-bubble"></div>
+                        <div class="so-top-icon">
                             <img src="https://img.icons8.com/dotty/2x/fa314a/favorites.png" alt="" width="100">
                         </div>
-                        <div class="solu_title">
+                        <div class="solu-title">
                             <h3>Качество обучения</h3>
                         </div>
-                        <div class="solu_description">
+                        <div class="solu-description">
                             <p>
                                 Подготовка специалистов на многоуровневой образовательной деятельности
                             </p>
@@ -253,16 +253,16 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="solution_cards_box">
-                    <div class="solution_card">
-                        <div class="hover_color_bubble"></div>
-                        <div class="so_top_icon">
+                <div class="order-cards-box">
+                    <div class="order-card">
+                        <div class="hover-color-bubble"></div>
+                        <div class="so-top-icon">
                             <img src="https://img.icons8.com/ios/2x/fa314a/astronaut.png" alt="" width="100">
                         </div>
-                        <div class="solu_title">
+                        <div class="solu-title">
                             <h3>Профессии будущего</h3>
                         </div>
-                        <div class="solu_description">
+                        <div class="solu-description">
                             <p>
                                 Наш путь за грамотными специалистами. Образование в Политехе - залог перспективных
                                 возможностей!

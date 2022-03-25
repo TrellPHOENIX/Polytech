@@ -280,7 +280,7 @@ img {
 
 /* CARDS */
 
-.solution_cards_box .solution_card {
+.order-cards-box .order-card {
     flex: 0 50%;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
@@ -296,28 +296,28 @@ img {
     user-select: none;
 }
 
-.solution_cards_box .solution_card:hover {
+.order-cards-box .order-card:hover {
     background: #b80a03;
     color: #fff;
     transform: scale(1.1);
     z-index: 9;
 }
 
-.solution_cards_box .solution_card:hover::before {
+.order-cards-box .order-card:hover::before {
     background: rgb(85 108 214 / 10%);
 }
 
-.solu_description p {
+.solu-description p {
     color: #b80a03;
     font-weight: 500;
 }
 
-.solution_cards_box .solution_card:hover .solu_title h3,
-.solution_cards_box .solution_card:hover .solu_description p {
+.order-cards-box .order-card:hover .solu-title h3,
+.order-cards-box .order-card:hover .solu-description p {
     color: #fff;
 }
 
-.solution_cards_box .solution_card:before {
+.order-cards-box .order-card:before {
     content: "";
     position: absolute;
     background: rgb(85 108 214 / 5%);
@@ -330,26 +330,24 @@ img {
     border-radius: 35px;
 }
 
-.solution_cards_box .solution_card:hover .solu_description button {
+.order-cards-box .order-card:hover .solu-description button {
     background: #fff !important;
     color: #309df0;
 }
 
-.solution_card .so_top_icon {}
-
-.solution_card .solu_title h3 {
+.order-card .solu-title h3 {
     color: #b80a03;
     font-size: 18pt;
     margin-top: 13px;
     margin-bottom: 13px;
 }
 
-.solution_card .solu_description p {
+.order-card .solu-description p {
     font-size: 12pt;
     margin-bottom: 15px;
 }
 
-.solution_card .solu_description button {
+.order-card .solu-description button {
     border: 0;
     border-radius: 15px;
     background: linear-gradient(140deg,
@@ -362,15 +360,13 @@ img {
     padding: 5px 16px;
 }
 
-.our_solution_content h1 {
+.our-order-content h1 {
     text-transform: capitalize;
     margin-bottom: 1rem;
     font-size: 2.5rem;
 }
 
-.our_solution_content p {}
-
-.hover_color_bubble {
+.hover-color-bubble {
     position: absolute;
     background: rgb(54 81 207 / 15%);
     width: 100rem;
@@ -385,11 +381,11 @@ img {
     transition: 0.7s;
 }
 
-.solution_cards_box .solution_card:hover .hover_color_bubble {
+.order-cards-box .order-card:hover .hover-color-bubble {
     top: 0rem;
 }
 
-.solution_cards_box .solution_card .so_top_icon {
+.order-cards-box .order-card .so-top-icon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -400,7 +396,7 @@ img {
     justify-content: center;
 }
 
-.solution_cards_box .solution_card .so_top_icon img {
+.order-cards-box .order-card .so-top-icon img {
     width: 40px;
     height: 50px;
     object-fit: contain;
