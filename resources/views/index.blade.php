@@ -714,7 +714,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-3 h3">Помощь</h5>
-                        <p class="text-copyright">По впоросам и сотрдничестве сайта</p>
+                        <p class="text-copyright">По впоросам и сотрудничестве сайта</p>
                         <p class="footer-text">Роман: <a
                                 href="https://wa.me/87087179348?text=Здравствуйте%2C+у+меня+есть+вопрос+по+сайту"
                                 target="_blank">
