@@ -12,7 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/style.scss', 'public/css')
+    .sass('resources/sass/main.scss', 'public/css')
+    .styles('resources/css/style.css', 'public/css/style.css')
+    .styles('resources/css/vendor/normalize.css', 'public/css/normalize.css')
     .sourceMaps();
 
-mix.browserSync('127.0.0.1:8000');
