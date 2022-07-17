@@ -1,9 +1,9 @@
-    <header class="container d-flex flex-wrap align-items-center justify-content-between bg-branded mb-2 pt-2">
         <div class="me-md-auto">
             <ul class="nav item-round-txt">
-                <li class="nav-item item-round"><a href="#" class="nav-link">KZ</a></li>
-                <li class="nav-item item-round item-round-current"><a href="#" class="nav-link">RU</a></li>
-                <li class="nav-item item-round"><a href="#" class="nav-link">EN</a></li>
+                <li class="nav-item item-round"><a href="http://127.0.0.1:8000/kz" class="nav-link">KZ</a></li>
+                <li class="nav-item item-round item-round-current"><a href="http://127.0.0.1:8000/ru"
+                        class="nav-link">RU</a></li>
+                <li class="nav-item item-round"><a href="http://127.0.0.1:8000/en" class="nav-link">EN</a></li>
                 <li class="nav-item item-round mx-4">
                     <a href="#" class="nav-link">
                         <span>
@@ -43,13 +43,14 @@
                     id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">ГЛАВНАЯ</a>
+                            <a class="nav-link" aria-current="page" href="#">@lang('locale.home')</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">КОЛЛЕДЖ</a>
+                            <a class="nav-link" href="#" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">@lang('locale.college')</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">АБИТУРИЕНТАМ</a>
+                            <a class="nav-link" href="#">@lang('locale.applicants')</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">СТУДЕНТАМ</a>
@@ -79,4 +80,63 @@
                 </div>
             </section>
         </nav>
-    </header>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="title-modal">
+                                        <h4>Управление</h4>
+                                    </div>
+                                    <div class="title-hr-modal"></div>
+                                    <div class="link-modal">
+                                        <div class="dropdown dropdown-text-modal">
+                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Знакомство с АГПК
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">История и факты</a></li>
+                                                <li><a class="dropdown-item" href="#">Музей колледжа</a></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#">Администрация</a>
+                                        <br>
+                                        <a href="#">ПЦК</a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="title-modal">
+                                        <h4>Планирование</h4>
+                                    </div>
+                                    <div class="title-hr-modal"></div>
+                                    <div class="link-modal">
+                                        <a href="#">Стратегический план</a>
+                                        <br>
+                                        <a href="#">План работы колледжа на учебный год</a>
+                                        <br>
+                                        <a href="#">План внутриколледжного контроля</a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="title-modal">
+                                        <h4>Участие</h4>
+                                    </div>
+                                    <div class="title-hr-modal"></div>
+                                    <div class="link-modal">
+                                        <a href="#">Hackathon</a>
+                                        <br>
+                                        <a href="#">WorldSkills</a>
+                                        <br>
+                                        <a href="#">Проект «Жас маман»</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

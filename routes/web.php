@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ApplicantsController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('pages.home');
+})->name('home');
+
+Route::get('/{language}', function ($language) {
+    App::setLocale($language);
+    return view('home');
 });
+
+
+Route::get('/studentsForm', [ApplicantsController::class, 'index']);
+Route::post('/store-form', [ApplicantsController::class, 'store']);
